@@ -1,0 +1,20 @@
+{
+  "name": "vscode-gridview",
+  "version": "0.0.0",
+  "description": "Lightweight extraction of VS Code GridView / SplitView / Sash as a small ESM library",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --out-dir dist",
+    "clean": "rm -rf dist",
+    "lint": "eslint . --ext .ts",
+    "prepare-demo": "echo 'Run npm install && npm run build then open demo/index.html'"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^6.0.0",
+    "typescript": "^5.0.0"
+  }
+}
